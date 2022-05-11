@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Page</title>
+    <link rel="stylesheet" href="styleprojeto.css">
+</head>
+<body>
+    <section class="sec"><!--começo sessao-->
+        <header><!--inicio header-->
+            <a href="TWeb02.html"><img src="imagens/logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produto</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Informações</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header><!--fim header-->
+
+        <div class="content"><!--inicio de content-->
+            <div class="textbox"><!--inicio textbox-->
+                <h2>that's what, <br> <span>I Like</span></h2>
+                <p>Washington Smith</p>
+                <a href="#">View All Products</a>
+            </div><!--fim textbox-->
+            <div class="imgbox"><!--incio imgbox-->
+                <img src="imagens/pepsi001.png" alt=""  class="pepsi">
+            </div><!--fim imgbox-->
+        </div><!--fim de content-->
+
+        <ul class="thumb"><!--inicio thumb-->
+            <li><img src="imagens/pepsi001.png" onclick="imgSlider('imagens/pepsi001.png');changeBgcolor('#0062be')"></li>
+            <li><img src="imagens/pepsi002.png" onclick="imgSlider('imagens/pepsi002.png');changeBgcolor('#e60c2c')"></li>
+            <li><img src="imagens/pepsi003.png" onclick="imgSlider('imagens/pepsi003.png');changeBgcolor('#1e1e1e')"></li>
+        </ul><!--fim thumb-->
+
+        <ul class="sci"><!--inicio sci-->
+            <li><a href="#"><img src="imagens/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/twitter.png" alt=""></a></li>
+        </ul><!--fim sci-->
+
+        <script>
+            function imgSlider(anything){
+                document.querySelector('.pepsi').src = anything
+            }
+            function changeBgcolor(color){
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+        </script>
+
+
+    </section><!--fim sessao-->
+</body>
+</html>
